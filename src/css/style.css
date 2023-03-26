@@ -1,8 +1,16 @@
 body {
     background-color: black;
+    color: white;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
 }
 
 .container {
+    position: relative;
+    margin: auto;
     max-width: 1410px;
     padding: 0 10px;
 }
