@@ -1,6 +1,34 @@
 @font-face {
-    font-family: "FontName";
-    src: URL("../fonts/FontName.ttf") format("truetype");
-    font-weight: 300;
+    font-family: "Acworth";
+    src: URL("../fonts/acworth-bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "KyivType Sans";
+    src: URL("../fonts/KyivTypeSans-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: URL("../fonts/geometria_medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: URL("../fonts/geometria_bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: URL("../fonts/geometria_extrabold.otf") format("opentype");
+    font-weight: 800;
     font-style: normal;
 }

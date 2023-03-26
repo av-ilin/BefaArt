@@ -1,11 +1,16 @@
 import React from "react";
-
-import "./css/reset.css";
-// import "./css/fonts.css";
-import "./css/style.css";
+import Router from "./components/Router";
+import Navigation from "./components/sections/nav/Navigation";
+import Footer from "./components/sections/footer/Footer";
 
 function App() {
-    return <div className="App"></div>;
+    return (
+        <div className="App">
+            <Navigation />
+            <Router />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
