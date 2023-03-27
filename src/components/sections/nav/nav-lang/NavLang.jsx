@@ -2,8 +2,6 @@ import Styles from "./NavLang.module.css";
 import React, { useState } from "react";
 import classNames from "classnames";
 
-console.log(Styles);
-
 const NavLang = () => {
     const [isActive, setActive] = useState(false);
 

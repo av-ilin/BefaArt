@@ -1,0 +1,18 @@
+.footer {
+    position: fixed;
+    bottom: -1px;
+    width: 100%;
+    padding: 57px 0;
+    background-color: red;
+
+    font-family: "Geometria";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.container {
+    composes: container from "../../../css/style.css";
+    display: flex;
+    justify-content: space-between;
+}

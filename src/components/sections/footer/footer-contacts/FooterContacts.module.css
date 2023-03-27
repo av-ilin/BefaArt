@@ -1,0 +1,9 @@
+.list {
+    display: flex;
+    gap: 40px;
+
+    font-family: "KyivType Sans";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
