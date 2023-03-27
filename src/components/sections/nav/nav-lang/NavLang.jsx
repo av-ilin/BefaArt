@@ -1,11 +1,29 @@
 import Styles from "./NavLang.module.css";
+import React, { useState } from "react";
+import classNames from "classnames";
+
+console.log(Styles);
 
 const NavLang = () => {
+    const [isActive, setActive] = useState(false);
+
     return (
-        <div className={Styles["nav__lang"]}>
-            <p>Eng</p>
-            <p>RUS</p>
-            <p>DEU</p>
+        <div
+            className={isActive ? Styles.box + " " + Styles.active : Styles.box}
+        >
+            <div className={Styles.list}>
+                <p>Eng</p>
+                <p>RUS</p>
+                <p>DEU</p>
+            </div>
+            <div
+                className={Styles.switcher}
+                onClick={() => {
+                    setActive(!isActive);
+                }}
+            >
+                &#x2335;
+            </div>
         </div>
     );
 };

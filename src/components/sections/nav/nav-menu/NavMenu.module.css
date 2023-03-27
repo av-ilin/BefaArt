@@ -1,15 +1,15 @@
-.nav__menu {
+.menu {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 75px;
 }
 
-.nav__menu-item {
+.item {
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
 
-.nav__menu-item:hover {
+.item:hover {
     transform: scale(1.1);
 }
