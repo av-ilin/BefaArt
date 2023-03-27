@@ -8,36 +8,3 @@
     font-size: 18px;
     line-height: 22px;
 }
-
-.nav__menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 75px;
-}
-
-.nav__menu_item {
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-}
-
-.nav__menu_item:hover {
-    transform: scale(1.1);
-}
-
-.nav__lang {
-    height: 100%;
-    position: absolute;
-    right: -1px;
-
-    font-family: "Geometria";
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-transform: uppercase;
-    gap: 15px;
-}

@@ -1,0 +1,16 @@
+.nav__lang {
+    height: 100%;
+    position: absolute;
+    right: -1px;
+
+    font-family: "Geometria";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 15px;
+}

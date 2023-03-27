@@ -1,0 +1,15 @@
+.nav__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+.nav__menu-item {
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav__menu-item:hover {
+    transform: scale(1.1);
+}
