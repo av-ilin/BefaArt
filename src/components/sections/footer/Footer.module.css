@@ -1,8 +1,9 @@
 .footer {
+    z-index: 50;
     position: fixed;
     bottom: -1px;
     width: 100%;
-    padding: 57px 0;
+    padding: 20px 0;
     background-color: red;
 
     font-family: "Geometria";

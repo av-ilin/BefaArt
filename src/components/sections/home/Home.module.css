@@ -1,0 +1,13 @@
+.home {
+    padding: 70px 0 70px;
+    min-height: calc(100vh - 70px - 70px);
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    composes: container from "../../../css/style.css";
+    width: 1390px;
+    height: 615px;
+    display: grid;
+}
