@@ -1,4 +1,4 @@
-import Styles from "./Navigation.module.css";
+import Styles from "./Nav.module.css";
 import NavLang from "./nav-lang/NavLang";
 import NavMenu from "./nav-menu/NavMenu";
 

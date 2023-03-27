@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./sections/home/Home";
-import Navigation from "./sections/nav/Navigation";
+import Navigation from "./sections/nav/Nav";
 import Footer from "./sections/footer/Footer";
 
 const Router = () => {
