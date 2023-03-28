@@ -1,4 +1,103 @@
 .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    composes: title from "../../../css/style.css";
+}
+
+.box {
     position: relative;
-    height: 300vh;
+}
+.myphoto {
+    z-index: -1;
+    position: absolute;
+    right: -1px;
+    max-width: calc(100% - 112px);
+    height: 100%;
+    object-fit: cover;
+    object-position: 75%;
+}
+
+.aboutme {
+    padding: 96px 28px 96px 265px;
+    max-width: 1119px;
+    font-family: "Acworth";
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 88px;
+}
+
+.aboutme::before {
+    content: "";
+    top: 107px;
+    left: 0px;
+
+    width: 245px;
+    height: 56px;
+
+    position: absolute;
+    background-color: #b91616;
+}
+
+.aboutme span {
+    color: #b91616;
+}
+
+@media (max-width: 1410px) {
+    .aboutme {
+        padding-left: 144px;
+        font-size: 60px;
+        line-height: 77px;
+        max-width: 839px;
+    }
+
+    .aboutme::before {
+        width: 134px;
+        height: 46px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .aboutme {
+        padding-left: 77px;
+        font-size: 50px;
+        line-height: 66px;
+        max-width: 700px;
+    }
+
+    .aboutme::before {
+        width: 67px;
+        height: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutme {
+        padding-left: 50px;
+        font-size: 40px;
+        line-height: 55px;
+        max-width: 600px;
+    }
+
+    .aboutme::before {
+        width: 40px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 414px) {
+    .aboutme {
+        padding-left: 28px;
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .aboutme::before {
+        top: 101px;
+        width: 22px;
+        height: 28px;
+    }
 }
