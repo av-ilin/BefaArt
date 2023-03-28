@@ -29,3 +29,11 @@
 .list p:hover:after {
     width: 110%;
 }
+
+@media (max-width: 720px) {
+    .list {
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

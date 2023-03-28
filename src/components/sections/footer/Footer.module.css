@@ -16,7 +16,7 @@
 }
 
 .active {
-    padding: 20px 0;
+    padding: 57.5px 0;
     height: 30px;
 }
 
@@ -24,4 +24,30 @@
     composes: container from "../../../css/style.css";
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 870px) {
+    .active {
+        height: 62px;
+        padding: 30px 0;
+    }
+
+    .container {
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .active {
+        padding: 20px 0;
+        height: 126px;
+        gap: 40px;
+    }
 }
