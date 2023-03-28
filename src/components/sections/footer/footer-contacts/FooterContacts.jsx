@@ -4,10 +4,7 @@ const FooterContacts = () => {
     return (
         <div className={styles.list}>
             <p>
-                Phone:{" "}
-                <a href="callto:+015207940490" data-translate="phone">
-                    +015207940490
-                </a>
+                Phone: <a href="tel:+015207940490">+015207940490</a>
             </p>
             <p>
                 Email: <a href="mailto:befaart@gmx.de">befaart@gmx.de</a>
