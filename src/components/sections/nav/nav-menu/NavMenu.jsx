@@ -7,11 +7,11 @@ const NavMenu = () => {
             <Link className={Styles.item} to="/">
                 Home
             </Link>
-            <Link className={Styles.item} to="/">
+            <Link className={Styles.item} to="/portfoio">
                 My portfolio
             </Link>
             <img src="images/logo.svg" alt="logo" />
-            <Link className={Styles.item} to="/">
+            <Link className={Styles.item} to="/about">
                 About me
             </Link>
             <Link className={Styles.item} to="/">

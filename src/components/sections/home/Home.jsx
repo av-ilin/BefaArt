@@ -1,8 +1,9 @@
 import styles from "./Home.module.css";
+import classNames from "classnames";
 
 const Home = () => {
     return (
-        <div className={styles.home}>
+        <div className={styles.home + " " + "section"}>
             <div className={styles.container}>
                 <div className={styles.hello}>
                     <h6>Hello, i am</h6>

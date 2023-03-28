@@ -14,3 +14,9 @@ a:-webkit-any-link {
     max-width: 1410px;
     padding: 0 10px;
 }
+
+.section {
+    position: relative;
+    padding: 70px 0 70px;
+    min-height: calc(100vh - 70px - 70px);
+}
