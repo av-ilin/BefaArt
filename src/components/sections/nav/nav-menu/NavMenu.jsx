@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
+import { ContactsContext } from "../../../../Contexts";
+import { useContext } from "react";
 import Styles from "./NavMenu.module.css";
 
 const NavMenu = () => {
+    const { setContactsState } = useContext(ContactsContext);
+
     return (
         <div className={Styles["menu"]}>
             <Link className={Styles.item} to="/">
@@ -14,9 +18,14 @@ const NavMenu = () => {
             <Link className={Styles.item} to="/about">
                 About me
             </Link>
-            <Link className={Styles.item} to="/">
+            <p
+                className={Styles.item}
+                onClick={() => {
+                    setContactsState((curState) => !curState);
+                }}
+            >
                 Contacts
-            </Link>
+            </p>
         </div>
     );
 };

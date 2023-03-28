@@ -1,8 +1,15 @@
 import React from "react";
 import Router from "./components/Router";
+import { ContactsContext } from "./Contexts";
 
 function App() {
-    return <Router />;
+    const [isContactsActive, setContactsState] = React.useState(false);
+    const value = { isContactsActive, setContactsState };
+    return (
+        <ContactsContext.Provider value={value}>
+            <Router />
+        </ContactsContext.Provider>
+    );
 }
 
 export default App;

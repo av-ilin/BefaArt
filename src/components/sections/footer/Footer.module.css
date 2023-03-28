@@ -3,13 +3,21 @@
     position: fixed;
     bottom: -1px;
     width: 100%;
-    padding: 20px 0;
+    padding: 0;
+    height: 0;
     background-color: red;
 
     font-family: "Geometria";
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.active {
+    padding: 20px 0;
+    height: 30px;
 }
 
 .container {

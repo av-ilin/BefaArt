@@ -19,8 +19,8 @@ a:-webkit-any-link {
     max-width: 1920px;
     margin: auto;
     position: relative;
-    padding: 70px 0 70px;
-    min-height: calc(100vh - 70px - 70px);
+    padding-top: 70px;
+    min-height: calc(100vh - 70px);
 }
 
 .title {

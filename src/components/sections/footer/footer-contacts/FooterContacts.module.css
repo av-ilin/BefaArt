@@ -1,5 +1,6 @@
 .list {
     display: flex;
+    align-items: center;
     gap: 40px;
 
     font-family: "KyivType Sans";
