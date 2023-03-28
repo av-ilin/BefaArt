@@ -5,7 +5,6 @@
 
 .container {
     composes: container from "../../../css/style.css";
-    width: 1390px;
     height: 615px;
     display: grid;
     grid-template-columns: 31% 65%;
@@ -49,4 +48,20 @@
     font-weight: 700;
     font-size: 220px;
     line-height: 243px;
+}
+
+@media (max-width: 900px) {
+    .hello h6 {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .hello {
+        gap: 0;
+    }
+
+    .hello h1 {
+        font-size: 24vw;
+        line-height: 27vw;
+    }
 }
