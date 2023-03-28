@@ -27,10 +27,15 @@
     flex-wrap: wrap;
 }
 
+@media (max-width: 1920px) {
+    .active {
+        padding: 30px 0;
+    }
+}
+
 @media (max-width: 870px) {
     .active {
         height: 62px;
-        padding: 30px 0;
     }
 
     .container {
