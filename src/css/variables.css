@@ -2,3 +2,9 @@
     --nav-height: 29px;
     --nav-padding: 20px;
 }
+
+@media (max-width: 768px) {
+    :root {
+        --nav-height: 19px;
+    }
+}

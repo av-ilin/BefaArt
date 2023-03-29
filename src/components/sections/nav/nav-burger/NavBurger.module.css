@@ -9,6 +9,11 @@
     height: var(--nav-height);
 }
 
+.logo img {
+    object-fit: contain;
+    height: 100%;
+}
+
 .burger {
     cursor: pointer;
     position: absolute;

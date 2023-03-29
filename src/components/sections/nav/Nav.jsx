@@ -14,7 +14,7 @@ const Navigation = () => {
         <nav className={Styles["nav"]}>
             <div className="container">
                 <NavLang />
-                {windowWidth > 1024 ? <NavMenu /> : <NavBurger />}
+                {windowWidth > 768 ? <NavMenu /> : <NavBurger />}
             </div>
         </nav>
     );
