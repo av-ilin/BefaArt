@@ -6,7 +6,7 @@
 }
 
 .logo {
-    height: 29px;
+    height: var(--nav-height);
 }
 
 .burger {

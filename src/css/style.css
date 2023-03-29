@@ -16,11 +16,12 @@ a:-webkit-any-link {
 }
 
 .section {
+    overflow: hidden;
     max-width: 1920px;
     margin: auto;
     position: relative;
-    padding-top: 70px;
-    min-height: calc(100vh - 70px);
+    padding-top: calc(var(--nav-height) + 2 * var(--nav-padding) + 1px);
+    min-height: calc(100vh - var(--nav-height) - 2 * var(--nav-padding) - 1px);
 }
 
 .title {

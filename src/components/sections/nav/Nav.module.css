@@ -3,7 +3,7 @@
     position: fixed;
     width: 100%;
     background-color: red;
-    padding: 20px 0;
+    padding: var(--nav-padding) 0;
     font-family: "KyivType Sans";
     font-weight: 500;
     font-size: 18px;

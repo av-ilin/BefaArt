@@ -21,7 +21,12 @@ const NavBurger = () => {
                         styles.burger + (isActive ? " " + styles.active : "")
                     }
                     onClick={() => {
-                        setIsActive((prev) => !prev);
+                        setIsActive((prev) => {
+                            let cur = !prev;
+                            if (cur) document.body.style.overflow = "hidden";
+                            else document.body.style.overflow = "";
+                            return cur;
+                        });
                     }}
                 >
                     <div></div>
