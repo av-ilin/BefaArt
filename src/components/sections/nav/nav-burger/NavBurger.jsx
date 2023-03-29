@@ -30,7 +30,7 @@ const NavBurger = () => {
                 </div>
             </div>
 
-            <NavMenu isBurger isActive={isActive} />
+            <NavMenu isBurger isActive={isActive} setIsActive={setIsActive} />
         </div>
     );
 };
