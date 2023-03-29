@@ -4,7 +4,7 @@ import { ContactsContext } from "../../../Contexts";
 import { useContext } from "react";
 
 const Footer = () => {
-    const { isContactsActive } = useContext(ContactsContext);
+    const { isContactsActive, setContactsState } = useContext(ContactsContext);
     return (
         <div
             className={
@@ -16,6 +16,16 @@ const Footer = () => {
             <div className={styles.container}>
                 <p>My contacts</p>
                 <FooterContacts />
+            </div>
+
+            <div
+                className={styles.exit}
+                onClick={() => {
+                    setContactsState((prev) => !prev);
+                }}
+            >
+                <div></div>
+                <div></div>
             </div>
         </div>
     );
