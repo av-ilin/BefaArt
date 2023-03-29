@@ -1,0 +1,58 @@
+.head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 29px;
+}
+
+.burger {
+    cursor: pointer;
+    position: absolute;
+    height: 16px;
+    right: -1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.burger div {
+    height: 2.22px;
+    background: #ffffff;
+    border-radius: 60px;
+    transition: 0.4s ease-in-out;
+}
+
+.burger div:nth-child(1) {
+    width: 7.11px;
+}
+
+.burger div:nth-child(2) {
+    width: 15.56px;
+}
+
+.burger div:nth-child(3) {
+    width: 12.44px;
+}
+
+.burger.active {
+    justify-content: center;
+}
+
+.burger.active div:nth-child(1) {
+    position: absolute;
+    opacity: 0;
+}
+
+.burger.active div:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.burger.active div:nth-child(3) {
+    position: absolute;
+    transform: rotate(-45deg);
+}
