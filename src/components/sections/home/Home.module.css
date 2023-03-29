@@ -51,6 +51,10 @@
 }
 
 @media (max-width: 900px) {
+    .container {
+        max-height: 590px;
+    }
+
     .hello h6 {
         font-size: 4vw;
         line-height: 5vw;
