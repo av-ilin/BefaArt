@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ContactsContext } from "../../../../Contexts";
+import { ContactsContext } from "../../../../js/Contexts";
 import { useContext } from "react";
 import Styles from "./NavMenu.module.css";
 

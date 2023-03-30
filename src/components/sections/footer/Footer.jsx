@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 import FooterContacts from "./footer-contacts/FooterContacts";
-import { ContactsContext } from "../../../Contexts";
+import { ContactsContext } from "../../../js/Contexts";
 import { useContext } from "react";
 
 const Footer = () => {

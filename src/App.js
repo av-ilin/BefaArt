@@ -1,6 +1,6 @@
 import React from "react";
 import Router from "./components/Router";
-import { ContactsContext } from "./Contexts";
+import { ContactsContext } from "./js/Contexts";
 
 function App() {
     const [isContactsActive, setContactsState] = React.useState(false);
