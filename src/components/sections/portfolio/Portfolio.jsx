@@ -1,3 +1,6 @@
+import styles from "./Portfolio.module.css";
+console.log(styles);
+
 const Portfolio = () => {
     return (
         <div
