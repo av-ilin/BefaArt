@@ -21,7 +21,7 @@ const NavMenu = ({
             <Link className={Styles.item} onClick={click} to="/">
                 Home
             </Link>
-            <Link className={Styles.item} onClick={click} to="/portfoio">
+            <Link className={Styles.item} onClick={click} to="/portfolio">
                 My portfolio
             </Link>
             <Link className={Styles.logo} onClick={click} to="/">
