@@ -1,0 +1,20 @@
+.button {
+    cursor: pointer;
+
+    box-sizing: border-box;
+    width: 225px;
+    height: 65px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: inherit;
+
+    font-family: "Geometria";
+    font-weight: 800;
+    font-size: 18px;
+
+    transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+    background-color: red;
+}
