@@ -16,20 +16,29 @@
 
 .box {
     font-family: "Geometria";
-    font-size: 20px;
     line-height: 25px;
+    font-size: 20px;
     text-align: start;
     max-width: 497px;
-    padding: 10px;
+    margin: 10px;
 }
 
 .attr {
     font-weight: 300;
     margin-bottom: 21px;
+
+    max-width: 70%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .description {
     font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .close {
@@ -37,4 +46,26 @@
     position: absolute;
     top: 30px;
     right: 30px;
+}
+
+@media (max-width: 800px) {
+    .wrap {
+        font-size: 28px;
+    }
+    .box {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrap {
+        font-size: 20px;
+    }
+    .box {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .attr {
+        margin-bottom: 10px;
+    }
 }

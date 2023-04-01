@@ -19,3 +19,15 @@
     top: 25px;
     right: 25px;
 }
+
+@media (max-width: 800px) {
+    .wrap {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrap {
+        font-size: 20px;
+    }
+}
