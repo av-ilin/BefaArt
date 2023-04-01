@@ -13,7 +13,12 @@ const NavMenu = ({
     state += isActive ? " " + Styles.active : "";
 
     const click = () => {
-        setIsActive((prev) => !prev);
+        setIsActive((prev) => {
+            let cur = !prev;
+            if (cur) document.body.style.overflow = "hidden";
+            else document.body.style.overflow = "";
+            return cur;
+        });
     };
 
     return (
