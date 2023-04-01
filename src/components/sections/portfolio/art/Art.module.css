@@ -1,6 +1,9 @@
 .art {
     width: 670px;
     height: 395px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .art img {
