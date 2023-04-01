@@ -1,10 +1,21 @@
 import styles from "./Home.module.css";
-import classNames from "classnames";
+import { useState, useEffect } from "react";
 
 const Home = () => {
+    const [anim, setAnim] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => setAnim(true));
+    }, []);
+
     return (
         <div className={styles.home + " " + "section"}>
-            <div className={styles.container}>
+            <div
+                className={
+                    styles.container +
+                    (anim ? " " + styles.active_container : "")
+                }
+            >
                 <div className={styles.hello}>
                     <h6>Hello, i am</h6>
                     <h1>BefaArt.</h1>
