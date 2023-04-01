@@ -4,7 +4,7 @@ import ArtDesc from "../art-desc/ArtDesc";
 import { useState } from "react";
 
 const Art = ({ art }) => {
-    // 0 - art, 1 - art name, 2 - art info
+    // states: 0 - art, 1 - art name, 2 - art info
     const [artState, setArtState] = useState(0);
 
     const onMouseEnter = () => {
