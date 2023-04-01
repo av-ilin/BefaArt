@@ -39,3 +39,10 @@
         height: 219px;
     }
 }
+
+@media (max-width: 400px) {
+    .art {
+        width: 290px;
+        height: 170px;
+    }
+}
