@@ -35,7 +35,7 @@ const Portfolio = () => {
             <div className={styles.container}>
                 <div className={styles.artbox}>
                     {arts.slice(0, artCount).map((art, i) => (
-                        <Art art={art} key={i} />
+                        <Art art={art} key={i} id={i % stepArt} />
                     ))}
                 </div>
                 <Button text={butText} onClick={click} />
