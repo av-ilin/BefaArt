@@ -1,5 +1,5 @@
 import styles from "./Portfolio.module.css";
-import BefaAPI from "../../../API/BefaApi";
+import BefaAPI from "../../../api/BefaApi";
 import Art from "./art/Art";
 import Button from "../../ui/button/Button";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
