@@ -6,11 +6,12 @@ import About from "./sections/about/About";
 import Portfolio from "./sections/portfolio/Portfolio";
 
 const Router = () => {
+    // basename="/projects/BefaArt/"
     return (
         <BrowserRouter>
             <Navigation />
             <Routes>
-                <Route element={<Home />} path="/" />
+                <Route element={<Home />} exact path="/" />
                 <Route element={<About />} path="/about" />
                 <Route element={<Portfolio />} path="/portfolio" />
                 <Route
