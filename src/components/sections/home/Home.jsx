@@ -20,9 +20,9 @@ const Home = () => {
                     <h6>Hello, i am</h6>
                     <h1>BefaArt.</h1>
                 </div>
-                <img src="images/home/home-art01.png" alt="art" />
-                <img src="images/home/home-art02.png" alt="art" />
-                <img src="images/home/home-art03.png" alt="art" />
+                <img src="images/home-art01.webp" alt="art" />
+                <img src="images/home-art02.webp" alt="art" />
+                <img src="images/home-art03.webp" alt="art" />
             </div>
         </div>
     );

@@ -13,7 +13,7 @@ const About = () => {
             <div className={styles.box + (anim ? " " + styles.animbox : "")}>
                 <img
                     className={styles.myphoto}
-                    src="images/me.png"
+                    src="images/befa.webp"
                     alt="my photo"
                 />
                 <p className={styles.aboutme}>
