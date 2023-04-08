@@ -9,7 +9,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className={styles.home + " " + "section"}>
+        <div className={styles.home + " section"}>
             <div
                 className={
                     styles.container +

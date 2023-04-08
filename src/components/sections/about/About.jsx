@@ -14,7 +14,7 @@ const About = () => {
                 <img
                     className={styles.myphoto}
                     src="images/befa.webp"
-                    alt="my photo"
+                    alt="Befa"
                 />
                 <p className={styles.aboutme}>
                     I, <span>Befa</span>, put mine artistic abstracts Works
