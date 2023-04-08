@@ -21,7 +21,7 @@
     object-fit: cover;
     object-position: 75%;
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     transition: all 1s ease-in-out;
 }
 
@@ -33,13 +33,13 @@
     font-size: 80px;
     line-height: 88px;
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateX(100%);
     transition: all 1s ease-in-out;
 }
 
 .animbox > * {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 .aboutme::before {

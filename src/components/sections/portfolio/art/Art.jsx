@@ -6,18 +6,9 @@ import { useState, useEffect, useRef } from "react";
 const Art = ({ art, id }) => {
     // states: 0 - art, 1 - art name, 2 - art info
     const [artState, setArtState] = useState(0);
-
-    const [artTrans, setArtTrans] = useState(id % 2 === 0 ? "150%" : "-150%");
-    const [artOpacity, setArtOpacity] = useState(0);
-
     const artRef = useRef(null);
 
     useEffect(() => {
-        setTimeout(() => {
-            setArtTrans("0");
-            setArtOpacity("1");
-        }, 30 + id * 100);
-
         if (id === 0)
             artRef.current.scrollIntoView({
                 behavior: "smooth",
@@ -40,8 +31,6 @@ const Art = ({ art, id }) => {
             onMouseLeave={onMouseLeave}
             style={{
                 backgroundImage: `url(${art.img})`,
-                transform: `translateX(${artTrans})`,
-                opacity: `${artOpacity}`,
             }}
         >
             {artState === 1 && (

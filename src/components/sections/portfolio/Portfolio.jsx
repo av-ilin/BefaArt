@@ -2,6 +2,7 @@ import styles from "./Portfolio.module.css";
 import BefaAPI from "../../../API/BefaApi";
 import Art from "./art/Art";
 import Button from "../../ui/button/Button";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { useEffect, useState } from "react";
 
 const Portfolio = () => {
@@ -33,11 +34,25 @@ const Portfolio = () => {
     return (
         <div className="section">
             <div className={styles.container}>
-                <div className={styles.artbox}>
+                <TransitionGroup className={styles.artbox}>
                     {arts.slice(0, artCount).map((art, i) => (
-                        <Art art={art} key={i} id={i % stepArt} />
+                        <CSSTransition
+                            key={i}
+                            classNames={{
+                                enter: styles["art-enter"],
+                                enterActive: styles["art-enter-active"],
+                                exit: styles["art-exit"],
+                                exitActive: styles["art-exit-active"],
+                            }}
+                            timeout={{
+                                enter: 32 + (i % stepArt) * 200,
+                                exit: 700,
+                            }}
+                        >
+                            <Art art={art} id={i % stepArt} />
+                        </CSSTransition>
                     ))}
-                </div>
+                </TransitionGroup>
                 <Button text={butText} onClick={click} />
             </div>
         </div>
