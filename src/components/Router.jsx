@@ -6,8 +6,7 @@ import About from "./sections/about/About";
 import Portfolio from "./sections/portfolio/Portfolio";
 
 const Router = () => {
-    // const basename = "/projects/BefaArt/"; //build
-    const basename = "";
+    const basename = "/projects/BefaArt/";
     return (
         <BrowserRouter basename={basename}>
             <Navigation />
