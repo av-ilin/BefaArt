@@ -6,9 +6,10 @@ import About from "./sections/about/About";
 import Portfolio from "./sections/portfolio/Portfolio";
 
 const Router = () => {
-    // basename="/projects/BefaArt/"
+    // const basename = "/projects/BefaArt/"; //build
+    const basename = "";
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={basename}>
             <Navigation />
             <Routes>
                 <Route element={<Home />} exact path="/" />

@@ -12,6 +12,7 @@ const Art = ({ art, id }) => {
         if (id === 0)
             artRef.current.scrollIntoView({
                 behavior: "smooth",
+                block: "center",
             });
     }, [id]);
 

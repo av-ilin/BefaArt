@@ -6,6 +6,7 @@
 .artbox {
     margin: 50px 0;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     column-gap: 50px;
     overflow: hidden;
@@ -27,8 +28,9 @@
 .art-enter-active {
     opacity: 1;
     transform: translateX(0);
-    transition: all 0.7s ease-in-out;
+    transition: opacity 0.7s ease-in-out;
 }
+
 .art-exit {
     opacity: 1;
     transform: translateX(0);
@@ -44,7 +46,7 @@
     transform: translateX(150%);
 }
 
-@media (max-width: 1410px) {
+@media (max-width: 1024px) {
     .artbox {
         gap: 32px;
         flex-direction: column;
@@ -52,5 +54,8 @@
     }
     .artbox > :nth-child(even) {
         margin-top: 0;
+    }
+    .art-enter:nth-child(n) {
+        transform: translateX(-50%);
     }
 }

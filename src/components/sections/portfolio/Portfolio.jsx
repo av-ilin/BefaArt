@@ -24,6 +24,7 @@ const Portfolio = () => {
         if (artCount >= arts.length) {
             setArtCount(stepArt);
             setButText("Load more");
+            window.scrollTo({ top: 0, behavior: "smooth" });
             return;
         }
 
@@ -45,7 +46,7 @@ const Portfolio = () => {
                                 exitActive: styles["art-exit-active"],
                             }}
                             timeout={{
-                                enter: 32 + (i % stepArt) * 200,
+                                enter: 30 + (i % 4) * 200,
                                 exit: 700,
                             }}
                         >
