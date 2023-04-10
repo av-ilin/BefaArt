@@ -1,4 +1,6 @@
 .art {
+    position: relative;
+    box-sizing: border-box;
     width: 670px;
     height: 395px;
     background-repeat: no-repeat;
